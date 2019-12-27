@@ -14,7 +14,8 @@ $gray-medium-light: #eaeaea;
 /* universal */
 
 body {
-  padding-top: 60px;
+  padding-top: 0;
+
 }
 
 section {
@@ -62,20 +63,152 @@ p {
 
 /* header */
 
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
+.navbar{
+  background: rgb(62,57,107)  ;
+  margin-bottom: 1px;
+}
+
+
+nav img{
+  border-radius: 50%;
+  margin: auto; 
+}
+
+nav > span{
+  color: #fff !important;
   font-weight: bold;
+}
+
+.navbar-toggler-icon{
+  background: #1E90FF !important;
+}
+
+navbar-toggler{
+  background: #fff !important;
+}
+
+nav ul li{
+  color: #fff !important;
+  margin-right: 15px;
+
+}
+
+nav ul li a{
+  margin-left: 3px;
+  color:  #D3D3D3;
   &:hover {
-    color: white;
+    color: #fff;
     text-decoration: none;
   }
 }
+
+
+.dropdown-menu{
+  width: 150px;
+}
+
+.dropdown-menu a{
+  color: black;
+  &:hover {
+    color: blue;
+    text-decoration: none;
+  }
+}
+
+
+.dropdown-menu i{
+  margin-left: 10px;
+}
+
+
+
+
+
+@media only screen and (min-width:767px){
+  nav > span{
+    margin-left: 10px;
+  }
+
+  nav > div{
+    justify-content: end;
+  }
+
+
+
+}
+
+
+
+/* Carousel */
+
+#carouselExampleFade{
+  position: relative;
+  height: 550px;
+  width: 100%;
+  margin-bottom: 20px;
+  
+}
+
+
+.carousel-inner .carousel-item img{
+  height: 550px;
+  width: 100%;
+}
+
+.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+
+
+/* Boutton d'inscription */
+
+.inscrit h1{
+  color: rgb(62,57,107) ;
+  font-size: 40px;
+  line-height: 60px;
+  position: relative;
+}
+
+.inscrit h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+#signupnow{
+  text-align: center;
+}
+
+#session_password{
+  margin-bottom: 15px;
+}
+
+
+
+
+@media only screen and (min-width:768px) and (max-width: 991px){
+  div{
+    justify-content: center;
+  }
+
+  nav > a{
+    margin-right: 0px !important;
+    padding: 0px 0px !important;
+    width: 0.5px;
+  }
+
+  nav > span{
+    opacity: 80%;
+  }
+  
+}
+
+
+
+
+
 
 /* footer */
 
@@ -84,24 +217,14 @@ footer {
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
-  a {
-    color: $gray;
-    &:hover {
-      color: $gray-darker;
-    }
-  }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    list-style: none;
-    li {
-      float: left;
-      margin-left: 15px;
-    }
-  }
+  background:  rgb(62,57,107) ;
+  margin-left: -20px; 
+  margin-right: -20px; 
 }
+
+
+
+
 
 /* miscellaneous */
 

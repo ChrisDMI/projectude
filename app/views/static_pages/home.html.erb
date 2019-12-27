@@ -17,18 +17,35 @@
     </div>
   </div>
 <% else %>
-  <div class="center jumbotron">
-    <h1>Welcome to the Sample App</h1>
 
-    <h2>
-      This is the home page for the
-      <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
-    </h2>
 
-    <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+   <div class="slideshow">
+
+      <%= render 'layouts/slideshow' %> 
+    
+    </div>
+
+
+  <div class="container inscrit">
+
+    <div class="row">
+
+    <h1>NOUS METTONS À VOTRE DISPOSITION UNE ÉQUIPE D’EXPERTS AFIN DE VOUS ACCOMPAGNER TOUT AU LONG DE LA PRÉPARATION DE VOTRE PROJET D’ETUDE, LE CHOIX DE VOTRE ORIENTATION, ET L’ACCOMPAGNEMENT DANS VOS DIFFÉRENTES PROCÉDURES D’INSCRIPTION.</h1>
+
   </div>
 
-  <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
-                        "https://rubyonrails.org/" %>
+    <h2>
+      Pas encore inscrit? inscrivez-vous dès maintenant 
+    
+    </h2>
+
+    
+
+    <div id="signupnow">
+    <%= link_to "inscrivez-vous maintenant !", signup_path, class: "btn btn-lg btn-primary" %>
+    </div>
+  
+   
+  </div>
+
 <% end %>
