@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  #get 'contact/index'
   get 'password_resets/new'
   get 'password_resets/edit'
   root   'static_pages#home'
@@ -9,6 +10,9 @@ Rails.application.routes.draw do
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
+
+  resources :formulaire, only: [:index, :new, :create]
+
   resources :users do
     member do
       get :following, :followers
@@ -19,3 +23,4 @@ Rails.application.routes.draw do
   resources :microposts,          only: [:create, :destroy]
   resources :relationships,       only: [:create, :destroy]
 end
+

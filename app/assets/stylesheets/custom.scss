@@ -63,10 +63,49 @@ p {
 
 /* header */
 
-.navbar{
-  background: rgb(62,57,107)  ;
-  margin-bottom: 1px;
+
+.top-bar ul {
+    list-style: none;
+    margin: 0 10px;
+    padding: 0;
 }
+#top-header-menu li {
+    display: inline;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.top-bar {
+    background: red;
+    line-height: 40px;
+    height: 40px;
+}
+.top-bar a {
+  color: #fff;
+}
+
+.top-bar #social {
+  text-align: right;
+}
+
+
+.top-bar #social ul li {
+  display: inline;
+  margi-left: 10px;
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+
+
+
+
+.navbar{
+  background: #26358c  ;
+  border-radius: 0px;
+}
+
 
 
 nav img{
@@ -77,6 +116,7 @@ nav img{
 nav > span{
   color: #fff !important;
   font-weight: bold;
+  font-size: 15px;
 }
 
 .navbar-toggler-icon{
@@ -90,15 +130,18 @@ navbar-toggler{
 nav ul li{
   color: #fff !important;
   margin-right: 15px;
+  font-size: 13px;
 
 }
 
 nav ul li a{
   margin-left: 3px;
   color:  #D3D3D3;
+  font-size: 15.5px;
   &:hover {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
   }
 }
 
@@ -120,11 +163,17 @@ nav ul li a{
   margin-left: 10px;
 }
 
+#contenu{
+  margin-top: 73px !important; 
+}
 
 
 
 
-@media only screen and (min-width:767px){
+
+
+
+@media only screen and (max-width:767px){
   nav > span{
     margin-left: 10px;
   }
@@ -132,6 +181,36 @@ nav ul li a{
   nav > div{
     justify-content: end;
   }
+
+  nav ul li{
+  color: #fff !important;
+  margin-right: 13px;
+  font-size: 15px;
+
+  }
+
+  nav ul li a{
+  margin-left: 3px;
+  color:  #D3D3D3;
+  font-size: 13px;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    }
+  }
+
+  #offre{
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: 7px
+
+  }
+
+  .navbar-fixed-top {
+    position: absolute !important;
+    top: 0px;
+  }
+
 
 
 
@@ -146,6 +225,7 @@ nav ul li a{
   height: 550px;
   width: 100%;
   margin-bottom: 20px;
+  margin-top: 40px;
   
 }
 
@@ -170,15 +250,17 @@ nav ul li a{
   font-size: 40px;
   line-height: 60px;
   position: relative;
+  margin-bottom: 30px;
 }
 
 .inscrit h2 {
   font-size: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #signupnow{
   text-align: center;
+  margin-bottom: 30px;
 }
 
 #session_password{
@@ -188,9 +270,60 @@ nav ul li a{
 
 
 
+
+/* Offre de Services */
+
+#offre{
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: 7px
+
+}
+
+
+#etapes{
+  background: #F5F5F5 ;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+#etapes h2{
+  text-align: left;
+  color: black;
+  font-weight: bold;
+  display: inline;
+}
+
+
+#etapes p{
+  margin-bottom:0px;
+}
+
+#jumbo {
+  text-align: center;
+}
+
+#jumbo p{
+  display: inline;
+  margin-left: 15px;
+  margin-right: 15px;
+  
+}
+
+#jumbo a{
+  width:190px;
+  hight: 18px;
+  font-size: 18px;
+
+}
+
+
+
+
 @media only screen and (min-width:768px) and (max-width: 991px){
   div{
-    justify-content: center;
+    justify-content: right;
   }
 
   nav > a{
@@ -208,6 +341,20 @@ nav ul li a{
 
 
 
+@media only screen and (min-width:992px) {
+  #navbarNavDropdown{
+    justify-content: right;
+  }
+
+  div img{
+    margin-right: 15px;
+  }
+  
+}
+
+
+
+
 
 
 /* footer */
@@ -217,7 +364,7 @@ footer {
   padding-top: 5px;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
-  background:  rgb(62,57,107) ;
+  background:  #26358c ;
   margin-left: -20px; 
   margin-right: -20px; 
 }

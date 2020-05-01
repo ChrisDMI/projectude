@@ -15,8 +15,13 @@ gem 'sass-rails',                 '5.1.0'
 gem 'webpacker',                  '4.0.7'
 gem 'turbolinks',                 '5.2.0'
 gem 'jbuilder',                   '2.9.1'
+gem 'bootstrap', '~> 4.4.1'
 gem 'bootsnap', '1.4.4', require: false
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+
+gem 'mail_form', '~> 1.8'
+gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
+gem 'dotenv-rails', groups: [:development, :test]
 
 group :development, :test do
   

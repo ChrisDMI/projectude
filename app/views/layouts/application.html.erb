@@ -14,6 +14,8 @@
 
 
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
     <%= stylesheet_link_tag 'application', media: 'all',
                                            'data-turbolinks-track': 'reload' %>
 
@@ -26,7 +28,7 @@
       <%= render 'layouts/header' %>
     </div>
 
-    <div class="container-fluid" id="contenu">
+    <div class="container-fluid" id="contenu"> 
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
